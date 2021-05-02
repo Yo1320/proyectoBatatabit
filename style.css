@@ -1,3 +1,11 @@
+/***************************************************************
+    GOOGLE FONTS
+***************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/***************************************************************
+    COLOR VARIABLES
+***************************************************************/
 :root {
     --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D5;
@@ -8,4 +16,88 @@
     --grey: #BABABA;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
+}
+
+/***************************************************************
+    GENERAL STYLES
+***************************************************************/
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/***************************************************************
+    HEADER STYLES
+***************************************************************/
+header {
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    width: 100%;
+    height: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo {
+    width: calc(100% - 10.5625rem);
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.4375rem 5.3125rem 2.0625rem 5.25rem;
+}
+
+.header__logo--patata {
+    width: 2.5rem;
+    height: 100%;
+}
+
+.header__logo--name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: var(--bitcoin-orange);
+    margin-left: 0.526875rem;
+}
+
+.header__slogan {
+    width: 18rem;
+    height: 4.875rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--just-white);
+    margin: 0 1rem 0;
+}
+
+.header__description {
+    width: 18rem;
+    height: 2.25rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--soft-orange);
+    margin: 1.5rem 1rem 2rem 1rem;
+}
+
+.header__button {
+    display: block;
+    background: var(--off-white);
+    width: 14.3125rem;
+    height: 3rem;
+    font-size: 0.875rem;
+    color: var(--warm-black);
+    text-decoration: none;
+    text-align: center;
+    line-height: 3rem;
+    position: absolute;
+    top: 16.625rem;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
