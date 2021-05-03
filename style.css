@@ -81,7 +81,7 @@ header {
 
 @keyframes fill-logo1 {
     from{fill: transparent;}
-    100%{fill: #FFD064;}
+    to{fill: #FFD064;}
 }
 
 #logo2 {
@@ -90,7 +90,7 @@ header {
 
 @keyframes fill-logo2 {
     from{fill: transparent;}
-    100%{fill: #FFE19D;}
+    to{fill: #FFE19D;}
 }
 
 #logo3 {
@@ -99,7 +99,7 @@ header {
 
 @keyframes fill-logo3 {
     from{fill: transparent;}
-    100%{fill: #FFE19D;}
+    to{fill: #FFE19D;}
 }
 
 #logo4 {
@@ -108,7 +108,7 @@ header {
 
 @keyframes fill-logo4 {
     from{fill: transparent;}
-    100%{fill: #FFE19D;}
+    to{fill: #FFE19D;}
 }
 /******************************************************************************************************/
 
