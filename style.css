@@ -52,12 +52,65 @@ header {
     justify-content: center;
     align-items: center;
     margin: 2.4375rem 5.3125rem 2.0625rem 5.25rem;
+    animation: aparece 4s;
 }
 
+@keyframes aparece {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/******************************************* Logo animation *******************************************/
 .header__logo--patata {
     width: 2.5rem;
     height: 100%;
 }
+
+#logo {
+    animation: fill-logo 4s ease forwards 4s;
+}
+
+@keyframes fill-logo {
+    from{fill: transparent;}
+    to{fill: #FFC250;}
+}
+
+#logo1 {
+    animation: fill-logo1 4s ease forwards 3s;
+}
+
+@keyframes fill-logo1 {
+    from{fill: transparent;}
+    100%{fill: #FFD064;}
+}
+
+#logo2 {
+    animation: fill-logo2 4s ease forwards 2s;
+}
+
+@keyframes fill-logo2 {
+    from{fill: transparent;}
+    100%{fill: #FFE19D;}
+}
+
+#logo3 {
+    animation: fill-logo3 4s ease forwards 1s;
+}
+
+@keyframes fill-logo3 {
+    from{fill: transparent;}
+    100%{fill: #FFE19D;}
+}
+
+#logo4 {
+    animation: fill-logo4 4s ease forwards;
+}
+
+@keyframes fill-logo4 {
+    from{fill: transparent;}
+    100%{fill: #FFE19D;}
+}
+/******************************************************************************************************/
 
 .header__logo--name {
     font-size: 1.5rem;
@@ -75,6 +128,11 @@ header {
     text-align: center;
     color: var(--just-white);
     margin: 0 1rem 0;
+    animation: izquierda 4s;
+}
+
+@keyframes izquierda {
+    from{margin-left: -5000px;}
 }
 
 .header__description {
@@ -84,6 +142,11 @@ header {
     text-align: center;
     color: var(--soft-orange);
     margin: 1.5rem 1rem 2rem 1rem;
+    animation: derecha 4s;
+}
+
+@keyframes derecha {
+    from{margin-right: -5000px;}
 }
 
 .header__button {
@@ -100,4 +163,9 @@ header {
     top: 16.625rem;
     border-radius: 4px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    animation: arriba 2s;
+}
+
+@keyframes arriba {
+    from{margin-top: -5000px;}
 }
