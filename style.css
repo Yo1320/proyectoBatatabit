@@ -8,6 +8,7 @@
 ***************************************************************/
 :root {
     --bitcoin-orange: #F7931A;
+    --bitcoin-orange-hover: #91560e;
     --soft-orange: #FFE9D5;
     --secondary-blue: #1A9AF7;
     --soft-blue: #E7F5FF;
@@ -51,7 +52,7 @@ body {
     line-height: 18px;
     text-align: center;
     color: #757575;
-    margin: 0 1.0625rem 2.125rem 0.9375rem;
+    margin: 0 1.0625rem 3.125rem 0.9375rem;
 }
 
 .planes__card {
@@ -75,7 +76,13 @@ body {
     text-align: center;
     line-height: 1.9375rem;
     color: var(--just-white);
-    margin: -0.96875rem 2.75rem 1rem 2.8125rem;
+    margin: 0 2.75rem 1rem 2.8125rem;
+    position: relative;
+    top: -0.96875rem;
+}
+
+.planes__card--btn-Recommended:hover {
+    background: var(--bitcoin-orange-hover);
 }
 
 .planes__card--pay {
@@ -134,6 +141,14 @@ body {
     margin-left: 0.8125rem;
 }
 
+.planes__card--btn-select:hover {
+    background: var(--bitcoin-orange);
+}
+
+.planes__card--btn-select:hover .fa-arrow-right {
+    color: var(--warm-black);
+}
+
 .planes__question {
     width: 18rem;
     font-size: 1.5rem;
@@ -163,6 +178,15 @@ body {
     font-size: 1rem;
 }
 
+.planes__questions .fa-chevron-down:hover {
+    color: var(--bitcoin-orange);
+    transform: scale(1.5);
+}
+
 .lastQuestion {
     margin-bottom: 4.1875rem;
+}
+
+@keyframes aparecer {
+    from{opacity: 0;}
 }
