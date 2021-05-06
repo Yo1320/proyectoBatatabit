@@ -25,7 +25,7 @@ body {
     width: 100%;
     height: 100vh;
     font-family: 'DM Sans', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 * {
@@ -132,4 +132,37 @@ body {
 .planes__card--btn-select .fa-arrow-right {
     color: var(--bitcoin-orange);
     margin-left: 0.8125rem;
+}
+
+.planes__question {
+    width: 18rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 1rem 2rem;
+    color: var(--warm-black);
+}
+
+.planes__questions {
+    width: 18rem;
+    font-size: 0.875rem;
+    color: #757575;
+    margin: 0 1rem 0.9375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planes__questions p {
+    width: 14.9375rem;
+    margin: 0;
+}
+
+.planes__questions .fa-chevron-down {
+    color: var(--warm-black);
+    font-size: 1rem;
+}
+
+.lastQuestion {
+    margin-bottom: 4.1875rem;
 }
