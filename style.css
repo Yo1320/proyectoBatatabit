@@ -1,11 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+
 :root {
-    --bitcoin-orange: #F7931A;
-    --soft-orange: #FFE9D5;
-    --secondary-blue: #1A9AF7;
-    --soft-blue: #E7F5FF;
-    --warm-black: #201E1C;
-    --warm-black-1: #282623;
-    --grey: #BABABA;
-    --off-white: #FAF8F7;
-    --just-white: #FFFFFF;
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --warm-black-1: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Footer {
+  padding: 40px 65px;
+  background-color: var(--bitcoin-orange);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Footer-links {
+  display: grid;
+  gap: 8px;
+}
+
+.Footer-link {
+  color: var(--just-white);
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "DM Sans";
+}
+
+.Footer-figure {
+  align-self: center;
+  justify-self: end;
+  text-align: center;
+}
+
+.Footer-isotipo {
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.Footer-copyright {
+  font-size: 8px;
+  color: var(--soft-orange);
+  font-family: "DM Sans";
+}
+
+@media only screen and (min-width: 768px) {
+  .Footer {
+    padding: 83px 184px;
+  }
+
+  .Footer-links {
+    gap: 16px;
+  }
+
+  .Footer-link {
+    font-size: 20px;
+  }
+
+  .Footer-isotipo {
+    height: 54px;
+    margin-bottom: 18px;
+  }
+
+  .Footer-copyright {
+    font-size: 18px;
+  }
 }
