@@ -1,3 +1,4 @@
+//Animación de la sección de planes
 window.addEventListener('scroll', function(){
   let animacion = document.getElementById('planesSection');
   let posicionObj1 = animacion.getBoundingClientRect().top;
