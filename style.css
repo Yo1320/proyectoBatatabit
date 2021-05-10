@@ -34,14 +34,14 @@ body {
 }
 
 /***************************************************************
-    PLANES STYLES
+    PLANES STYLES - MOBILE
 ***************************************************************/
 .planes__select {
     width: 18rem;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    margin: 5.125rem 1.0625rem 1.5rem 0.9375rem;
+    margin: 5.125rem auto 0.9375rem;
     line-height: 26px;
     color: var(--warm-black);
 }
@@ -52,7 +52,14 @@ body {
     line-height: 18px;
     text-align: center;
     color: #757575;
-    margin: 0 1.0625rem 3.125rem 0.9375rem;
+    margin: 0 auto 3.125rem;
+}
+
+.planes__cardsSection {
+    display: flex;
+    overflow-x: auto;
+    margin-top: -0.96875rem;
+    margin-bottom: 4rem;
 }
 
 .planes__card {
@@ -60,8 +67,8 @@ body {
     height: 15.4375rem;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: 8px;
-    margin: 0 4.0625rem 4rem;
     text-align: center;
+    margin-top: 0.96875rem;
 }
 
 .planes__card--btn-Recommended {
@@ -79,6 +86,10 @@ body {
     margin: 0 2.75rem 1rem 2.8125rem;
     position: relative;
     top: -0.96875rem;
+}
+
+.disNone {
+    opacity: 0;
 }
 
 .planes__card--btn-Recommended:hover {
@@ -154,7 +165,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    margin: 0 1rem 2rem;
+    margin: 0 auto 2rem;
     color: var(--warm-black);
 }
 
@@ -162,7 +173,7 @@ body {
     width: 18rem;
     font-size: 0.875rem;
     color: #757575;
-    margin: 0 1rem 0.9375rem;
+    margin: 0 auto 0.9375rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -189,4 +200,55 @@ body {
 
 @keyframes aparecer {
     from{opacity: 0;}
+}
+
+/***************************************************************
+    PLANES STYLES IPAD
+***************************************************************/
+@media screen and (min-width: 768px) {
+    .planes__select {
+        width: 29.125rem;
+        font-size: 2.5rem;
+        line-height: 2.625rem;
+        margin: 5rem auto 1.5rem;
+    }
+
+    .planes__info {
+        width: 29.125rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .planes__cardsSection {
+        justify-content: space-around;
+        margin-bottom: 5rem;
+    }
+
+    .planes__question {
+        width: 29.125rem;
+        font-size: 2.5rem;
+        line-height: 2.625rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .planes__questions {
+        width: 29.125rem;
+        margin-bottom: 1rem;
+    }
+
+    .planes__questions p {
+        width: 24.1697rem;
+        font-size: 1.25rem;
+        margin: 0;
+    }
+    
+    .planes__questions .fa-chevron-down {
+        color: var(--warm-black);
+        font-size: 1.75rem;
+    }
+
+    .lastQuestion {
+        margin-bottom: 6.375rem;
+    }
 }
